@@ -3,26 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <title>Kayıt Ol</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Hesap Oluştur</h1>
+  <div class="form-container">
+    <h1>Hesap Oluştur</h1>
+    <form>
+      <label for="fullname">Ad Soyad:</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Adınızı ve soyadınızı girin" required>
 
-  <form>
-    <label for="fullname">Ad Soyad:</label><br>
-    <input type="text" id="fullname" name="fullname" placeholder="Adınızı ve soyadınızı girin"><br><br>
+      <label for="email">E-posta:</label>
+      <input type="email" id="email" name="email" placeholder="E-posta adresinizi girin" required>
 
-    <label for="email">E-posta:</label><br>
-    <input type="email" id="email" name="email" placeholder="E-posta adresinizi girin" required><br><br>
+      <label for="password">Şifre:</label>
+      <input type="password" id="password" name="password" placeholder="Şifrenizi oluşturun" required>
 
-    <label for="password">Şifre:</label><br>
-    <input type="password" id="password" name="password" placeholder="Şifrenizi oluşturun" required><br><br>
+      <label for="confirm-password">Şifreyi Onayla:</label>
+      <input type="password" id="confirm-password" name="confirm-password" placeholder="Şifrenizi tekrar girin" required>
 
-    <label for="confirm-password">Şifreyi Onayla:</label><br>
-    <input type="password" id="confirm-password" name="confirm-password" placeholder="Şifrenizi tekrar girin" required><br><br>
-
-    <button type="submit">Kayıt Ol</button>
-  </form>
-
-  <p>Zaten bir hesabın var mı? <a href="login.html">Giriş Yap</a></p>
+      <button type="submit">Kayıt Ol</button>
+    </form>
+    <p class="form-link">Zaten bir hesabın var mı? <a href="login.html">Giriş Yap</a></p>
+  </div>
 </body>
 </html>
